@@ -1,0 +1,24 @@
+{
+  "name": "todo_api",
+  "version": "1.0.0",
+  "description": "todo app api app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkuranhy3/my-todo-api-project.git"
+  },
+  "author": "Alfred Boateng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkuranhy3/my-todo-api-project/issues"
+  },
+  "homepage": "https://github.com/nkuranhy3/my-todo-api-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.9"
+  }
+}
