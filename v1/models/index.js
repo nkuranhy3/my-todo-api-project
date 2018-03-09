@@ -2,7 +2,7 @@
 var mongoose = require("mongoose");
 
 mongoose.set("debug", true);
-mongoose.connect("mongodb://localhost/todo_v1");
+mongoose.connect("mongodb://localhost/todo");
 
 mongoose.Promise = Promise;
 
