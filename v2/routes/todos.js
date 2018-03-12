@@ -2,11 +2,6 @@ var express = require("express");
 var router = express.Router();
 var db = require("../models");
 
-/*   show all data in the database */
-db.Todo.create({
-  name: "walk vvvvvvvvvvvvvvv"
-})
-
 router.get("/", function (req, res) {
   db.Todo.find()
     .then(function (todos) {

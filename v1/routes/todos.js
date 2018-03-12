@@ -3,9 +3,6 @@ var router = express.Router();
 var db = require("../models");
 
 /*   show all data in the database */
-db.Todo.create({
-  name: "walk vvvvvvvvvvvvvvv"
-})
 
 router.get("/", function (req, res) {
   db.Todo.find()
@@ -30,7 +27,6 @@ router.post("/", function (req, res) {
       console.log(err);
     });
 });
-
 
 
 /*show one object in the data */
@@ -71,28 +67,8 @@ router.delete("/:todoId", function (req, res) {
     })
     .catch(function (err) {
       res.send(err);
-    })
+    });
 
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 module.exports = router;
